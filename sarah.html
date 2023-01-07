@@ -1,0 +1,397 @@
+@extends('layout')
+@section('content')
+
+{{-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body> --}}
+
+
+<!-- header section starts  -->
+
+<header>
+
+<a href="#" class="logo"><i class="fas fa-graduation-cap"></i></a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#jurusan">Jurusan</a></li>
+        <li><a href="#uniform">uniform</a></li>
+        <li><a href="#review">Testimoni</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/"><button type="button" class="btn btn-primary" style="font-size: 15px; border-radius:20px; width:px">Login</button></a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="content">
+    <h1>PPDB TP 2023-2024 <br> SMK Wikrama Bogor</h1>
+    <p>Ayo! segera daftarkan dirimu ke SMK Wikrama dengan cara klik PENDAFTARAN PPDB dibawah ini!</p>
+    <a href="/create"><button>Pendaftaran PPDB</button></a>
+</div>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>MOTTO</h3>
+        <p>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlaqul Karimah</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-hand-fist"></i>
+        <h3>AFIRMASI</h3>
+        <p>Padamu negeri - kami berjanji - lulus Wikrama siap membangun negeri</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-face-smile"></i>
+        <h3>ATITUDE</h3>
+        <p>Aku ada lingkunganku bahagia</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+
+<section class="about" id="about">
+{{-- 
+<h1 class="heading">about us</h1> --}}
+{{-- <h3 class="title">Sekolah Menengah Kejuruan Pusat Kenggulan</h3> --}}
+
+<div class="row">
+    
+    <div class="col">
+        <div class="content">
+            <h3>SMK Unggul dan Berprestasi Intrenasional</h3>
+            <p>SMK Wikrama Bogor Satu dari 20 SMK Penerima Penghargaan "SMK Unggul dan Berprestasi" di Indonesia dari KEMENDIKBUD</p>
+            <p>SMK Wikrama selalu menerapkan protokol kesehatan dengan ketat, jadi kamu gak perlu khawatir lagi !</p>
+            <p>Wikrama Jadi Kontingen Kwarcab Kota Bogor di Perkemahan Wirakarya Daerah</p>
+            <a href="#"><button>Kembali</button></a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="image">
+            <img src="{{asset('assets/img/wik.JPG')}}" alt="">
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- about section ends -->
+
+<!-- teacher section starts  -->
+
+<section id="jurusan" class="jurusan">
+
+<h1 class="heading">Jurusan</h1>
+<h3 class="title">SMK Wikrama memiliki 7 jurusan</h3>
+
+<div class="card-container">
+
+    <div class="card">
+        <img src="{{asset('assets/img/pplg.JPG')}}" alt="">
+        <h3>Pengembangan Perangkat <br> Lunak dan Gim</h3>
+        <p>KEUNGGULAN</p>
+        <p>Deteskop Programing, Web Programing, Bussiness Analyst, Frontend Development, Backend Development, Mobile Programing, Database Administration, UI/UX dll.</p>
+        {{-- <a href="#"><button>learn more</button></a> --}}
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/tkj.JPG')}}" alt="">
+        <h3>Teknik Jaringan Komputer <br> dan Telekomunikasi</h3>
+        <p>KEUNGGULAN</p>
+        <p>Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi Intrenasional seperti CNAP DAN MCNA dll.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/dkv.JPG')}}" alt="">
+        <h3>Desain Komunikasi Visual</h3>
+        <p>KEUNGGULAN</p>
+        <p>Lulusan dapaet memiliki kesempatan kerja yang luas dibidang periklanan, produnction house, radio & televisi, studio foto, percetakan grafis, penerbit majalah/koran dll.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/pmn.JPG')}}" alt="">
+        <h3>Pemasaran</h3>
+        <p>KEUNGGULAN</p>
+        <p>Kompetensi keahlian Bisnis Daring Pemasran memiliki Kompetensi yang sedikit mirip dengan Multimedia dan Perkantoran.DIharuskan mampu membuat foto ptoduk, desain, copy writing dll.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/mplb.JPG')}}" alt="">
+        <h3>Manajemen Perkantoran <br> Lembaga Bisnis</h3>
+        <p>KEUNGGULAN</p>
+        <p>Kompetensi keahlian Otomatisasi dan Tata Kelola Perkantoran/Administrasi Perkantoran memiliki keunggulan dibidang prestasi peserta didik seperti juara II lomba keterampilan siswa bidang lomba sekertaris tingkat provinsi tahun 2016 dan juara 1 lomba olimpiade sekertaris tingkat nasional tahun 2017.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/tbg.JPG')}}" alt="">
+        <h3>Tata Boga</h3>
+        <p>KEUNGGULAN</p>
+        <p>Siswa jurusan Tata Boga mampu bekerja diberbagai bidang jasa boga, seperti restoran, hotel, rumah sakit, chatering dll sesuai dengan minat dan bakatnya.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+    <div class="card">
+        <img src="{{asset('assets/img/hotel.JPG')}}" alt="">
+        <h3>Perhotelan</h3>
+        <p>KEUNGGULAN</p>
+        <p>Siswa jurusan Perhotelan akan mampu belerja di departemen yang ada di dalam hotal dengan kompetisi yang mereka miliki dan pelajari.</p>
+        {{-- <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div> --}}
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- teacher section ends -->
+
+<!-- course section starts  -->
+
+<section id="uniform" class="uniform">
+
+<h1 class="heading">UNIFORM</h1>
+<h3 class="title">Macam-macam seragam SMK Wikrama</h3>
+
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Senin</b></h3>
+        <h4>Menggunakan Seragam Almameter</h4>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Selasa</b></h3>
+        <h4>Menggunakan Seragam Pramuka</h4>
+    </div>
+
+    <div class="box">
+        {{-- <i class="fab fa-js-square"></i> --}}
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Rabu</b></h3>
+        <h4>Menggunakan Seragam <br> Putih-Hijau</h4>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Kamis</b></h3>
+        <h4>Menggunakan Seragam Almameter</h4>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Jumat</b></h3>
+        <h4>Menggunakan Seragam <br> Muslim/Almameter</h4>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/hotel.JPG')}}" style="width: 100px" alt="">  
+        <h3><b>Olahraga</b></h3>
+        <h4>Menggunakannya Jika Ada Mapel Olahraga</h4>
+    </div>
+
+</div>
+
+</section>
+
+<!-- course section ends -->
+
+<!-- review section starts  -->
+
+<section id="review" class="review">
+
+<h1 class="heading">Testimoni</h1>
+{{-- <h3 class="title">what our students says about us</h3> --}}
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="{{asset('assets/img/profile.JPG')}}" alt="">
+        <h3>2000<br>Ahmad Munito</h3>
+        <p>Maju Terus Wikrama, dengan sekolah di Wikrama saya dibekali ilmu yg sangat bermanfaat dan ahklakul karimah bisa langsung bersaing ke dunia kerja di era modern ini</p>
+        <h6>Administrasi Perkantoran (APK)</h6>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/profile.JPG')}}" alt="">
+        <h3>2011<br>Lutfi Hakim</h3>
+        <p>TSMK Wikrama bukan hanya menjadikan siswanya untuk masuk ke dunia kerja, melainkan melebihi dari apa yang dibutuhkan di dunia kerja pada umumnya.</p>
+        <h6>Rekayasa Perangkat Lunak (RPL)</h6>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="{{asset('assets/img/profile.JPG')}}" alt="">
+        <h3>2016<br>Kamaludin</h3>
+        <p>Menerapkan sistem pembelajaran yang baik, efektif dan berbaris IT yang sangat memudahkan siswa.</p>
+        <h6>Rekayasa Perangkat Lunak (RPL)</h6>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">contact us</h1>
+{{-- <h3 class="title">we love conversatios, lets talk.</h3> --}}
+
+<div class="row">
+    <div class="col">
+    <div class="image">
+        <img src="{{asset('assets/img/3.JPG')}}" alt="">
+    </div>
+    </div>
+    
+    <div class="col">
+    <div class="form-container">
+        <form action="">    
+            <input type="text" placeholder="full name">
+            <input type="email" placeholder="enter your email">
+            <input type="number" placeholder="phone">
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit" value="send">
+        </form>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<section class="footer">
+    <img src="{{asset('assets/img/logo.JPG')}}" style="width: 200px; margin-top:20px" alt="">
+    <h3>0251-8242411 <br>Jl. Raya Wangun Kelurahan <br> Sindangsari Bogor Timur 16720</h3>        
+<div class="icons">
+    <a href="https://twitter.com/smkwikrama" class="fab fa-twitter"></a>
+    <a href="https://www.instagram.com/smkwikrama/" class="fab fa-instagram"></a>
+    <a href="https://www.youtube.com/@multimediawikrama7482" class="fab fa-youtube"></a>
+    <a href="https://www.linkedin.com/school/smkwikramabogor/mycompany/" class="fab fa-linkedin"></a>
+</div>
+
+<div class="credit">created by <span>sarah</span> | all rights reserved.</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+    
+</body>
+</html>
+@endsection
